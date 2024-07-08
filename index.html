@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gift Card Site</title>
+    <style>
+        .product {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .product img {
+            width: 200px;
+            height: 200px;
+        }
+        .message-button {
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gift Cards</h1>
+    <div class="product">
+        <img src="path_to_image1.jpg" alt="Gift Card 1">
+        <p>$10</p>
+    </div>
+    <div class="product">
+        <img src="path_to_image2.jpg" alt="Gift Card 2">
+        <p>$20</p>
+    </div>
+    <button class="message-button" onclick="alert('Message sent!')">Ask about merchandise</button>
+    <h2>Enter Your Account Details</h2>
+    <form action="/submit" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
